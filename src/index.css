@@ -92,3 +92,11 @@ input[type=text] {
   color: rgb(122, 122, 122);
   padding: 0 15px;
 }
+
+/* Media Queries */
+
+@media screen and (max-width: 500px) {
+  .page {
+    width: 350px;
+  }
+}
