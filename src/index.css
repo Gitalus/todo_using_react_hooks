@@ -76,6 +76,7 @@ input[type=text] {
 .fas.fa-times {
   visibility: hidden;
   cursor: pointer;
+  color: pink;
 }
 
 .item-container:hover .fas.fa-times {

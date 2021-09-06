@@ -12,7 +12,7 @@ export const TodoApp = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        if (desc.trim().length <= 1) return;
+        if (desc.trim().length < 1) return;
 
         const newTodo = {
             desc
@@ -22,7 +22,7 @@ export const TodoApp = () => {
     };
 
     const handleDelete = (index) => {
-
+        setTodos([ ...todos.slice(0, index), ...todos.slice(index + 1) ])
     }
 
     return (
@@ -50,7 +50,9 @@ export const TodoApp = () => {
                             >
                                 { todo.desc }
                             </div>
-                            <i class="fas fa-times"></i>
+                            <i 
+                                class="fas fa-times"
+                                onClick={ () => handleDelete(index) }></i>
                             <hr className="w100"/>
                         </div>
                     ))
