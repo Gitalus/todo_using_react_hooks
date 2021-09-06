@@ -56,7 +56,6 @@ input[type=text] {
   background-color: transparent;
   margin-top: 10px;
   width: 90%;
-
 }
 
 .item-list {
@@ -98,5 +97,9 @@ input[type=text] {
 @media screen and (max-width: 500px) {
   .page {
     width: 350px;
+  }
+
+  input[type=text] {
+    width: 80%;
   }
 }
