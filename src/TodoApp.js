@@ -43,15 +43,17 @@ export const TodoApp = () => {
                 </form>
                 {
                     todos.map( (todo, index) => (
-                        <div className="item-container">
+                        <div 
+                            className="item-container"
+                            key={ index }
+                        >
                             <div 
-                                key={ index }
                                 className="item-list"
                             >
                                 { todo.desc }
                             </div>
-                            <i 
-                                class="fas fa-times"
+                            <i  
+                                className="fas fa-times"
                                 onClick={ () => handleDelete(index) }></i>
                             <hr className="w100"/>
                         </div>
